@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/begin"
+        android:textSize="@dimen/text_size_profile_screen"
+        android:layout_marginTop="15dp"
+        android:id="@+id/mTvStartTime"/>
+
+    <Button
+        android:id="@+id/mBtnStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_start_time"
+        android:layout_marginTop="15dp"
+        android:onClick="onclick"/>
+
+    <TextView
+        android:id="@+id/mTvEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/end"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_profile_screen"
+        android:layout_marginTop="45dp"/>
+
+    <Button
+        android:id="@+id/mBtnEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_end_time"
+        android:layout_marginTop="15dp"
+        android:onClick="onclick"/>
+
+    <Button
+        android:id="@+id/mBtnStartApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/start"
+        android:layout_marginTop="45dp"/>
+
+</LinearLayout>
