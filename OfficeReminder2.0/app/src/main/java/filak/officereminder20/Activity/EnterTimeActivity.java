@@ -20,22 +20,25 @@ import filak.officereminder20.R;
 
 public class EnterTimeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String LOG_TAG = "myLogs";
     private TextView mTvStartTime;
     private TextView mTvEndTime;
+    private Button mBtnStartApp;
+    private Button mBtnStartTime;
+    private Button mBtnEndTime;
+    private Button mBtnGoToTheDog;
+
     private int DIALOG_TIME;
     private int mHourStart = -1;
     private int mMinuteStart;
     private int mHourEnd = -1;
     private int mMinuteEnd;
-    private Button mBtnStartApp;
     private int range;
     private int rangeFinal;
     private static final String mStrRemindersInstall = "Reminders are installed";
     private static final String mStrRemindersCancel = "Reminers canceled";
-    private Button mBtnStartTime;
-    private Button mBtnEndTime;
+    private static final String LOG_TAG = "myLogs";
     protected static final String mStrSp = "shared_preferences";
+
     private Context context = EnterTimeActivity.this;
 
     @Override
@@ -48,6 +51,7 @@ public class EnterTimeActivity extends AppCompatActivity implements View.OnClick
         mBtnStartApp = (Button) findViewById(R.id.mBtnStartApp);
         mBtnStartTime = (Button) findViewById(R.id.mBtnStartTime);
         mBtnEndTime = (Button) findViewById(R.id.mBtnEndTime);
+        mBtnGoToTheDog = (Button) findViewById(R.id.mBtnGoToTheDog);
     }
 
     public void onclick(View view) {
@@ -133,6 +137,13 @@ public class EnterTimeActivity extends AppCompatActivity implements View.OnClick
                     Toast.makeText(this, mStrRemindersInstall, Toast.LENGTH_SHORT).show();
 
                 break;
+
+            case R.id.mBtnGoToTheDog:
+
+                Intent intent = new Intent(context, DogActivity.class);
+                startActivity(intent);
+                break;
+
             default:
                 break;
         }

@@ -32,5 +32,6 @@
     <string name="button_add_start_time">Add start time</string>
     <string name="button_add_end_time">Add end time</string>
     <string name="action_log_out">Log out</string>
-    <string name="test">Test SoursTree</string>
+    <string name="text_view_you_are_sad">If you are sad, click</string>
+    <string name="button_go_to_dogs_activity">Here</string>
 </resources>

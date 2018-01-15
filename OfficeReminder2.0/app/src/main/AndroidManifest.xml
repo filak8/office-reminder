@@ -32,7 +32,8 @@
         </activity>
         <activity android:name=".Activity.LogInActivity" />
         <activity android:name=".Activity.EditProfileScreenActivity" />
-        <activity android:name=".Activity.ProfileScreenActivity"></activity>
+        <activity android:name=".Activity.ProfileScreenActivity" />
+        <activity android:name=".Activity.DogActivity"></activity>
     </application>
 
 </manifest>
